@@ -1,0 +1,187 @@
+level 0:(username)ssh bandit0@bandit.labs.overthewire.org -p 2220
+password:bandit0
+commands used: ls -alps
+cat readme: NH2SQwcBdpmTEzi3bvBHMM9H66vVXjl
+level 1: username ssh bandit1@bandit.labs.overthewire.org -p 2220
+password:  NH2SQwcBdpmTEzi3bvBHMM9H66vVXjl
+commands used: ls -alps
+cat ./-: rRGizSaX8Mk1RTb1CNQoXTcYWU6lgzi
+level 2: username ssh bandit2@bandit.labs.overthewire.org -p 2220
+password: rRGizSaX8Mk1RTb1CNQoXTcYWU6lgzi
+commands used: ls -alps
+cat spaces\ in\ this\ filename: aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+level 3: username ssh bandit3@bandit.labs.overthewire.org -p 2220
+password:aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG
+command used: ls -alps
+cd inhere/
+ls -al
+cat .hidden: 2EW7BBsr6MMoJ2HjW067dm8EgX26xNe
+level 4: username ssh bandit4@bandit.labs.overthewire.org -p 2220
+password:  2EW7BBsr6MMoJ2HjW067dm8EgX26xNe
+command used: ls -alps
+cd inhere/ 
+ls 
+find . -type f | xargs file
+man xargs
+cat ./-file07: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+level 5:  username ssh bandit5@bandit.labs.overthewire.org -p 2220
+password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+command used: ls -alps
+cd inhere/
+find . -type f -size 1033c ! -executable
+cat ./maybehere07/.file2 : P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU
+level 6: username ssh bandit6@bandit.labs.overthewire.org -p 2220
+password: lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR
+command used: find / -type f -user bandit7 -group bandit6 -size 33c
+cat /var/lib/dpkg/info/bandit7.password: z7WtoNQU2XfjWA8u5rN4vzqu4v99S
+level 7: username ssh bandit6@bandit.labs.overthewire.org -p 2220
+password: z7WtoNQU2XfjWA8u5rN4vzqu4v99S
+command used: ls -alps
+strings data.txt | grep "millionth": TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+level 8: username ssh bandit8@bandit.labs.overthewire.org -p 2220
+password:TESKZC0XvTetK0S9xNwm25STk5iWrBvP
+command used:cat data.txt
+sort data.txt
+man uniq
+sort data.txt | uniq | -c: ENN632PlfYiZbn3PhVK3XOGSlNInNE00t
+level 9: username ssh bandit9@bandit.labs.overthewire.org -p 2220
+password:ENN632PlfYiZbn3PhVK3XOGSlNInNE00t
+command used: strings data.txt | grep "=": G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+level 10: username ssh bandit10@bandit.labs.overthewire.org -p 2220
+password: G7w8LIi6J3kTb8A7j9LgrywtEUlyyp6s
+command used: base
+man base64
+base64 -d data.txt: 6zPeziLdR2RKNdNYFNb6nVCkzphlXHBM
+level 11: username ssh bandit11@bandit.labs.overthewire.org -p 2220
+password:6zPeziLdR2RKNdNYFNb6nVCkzphlXHBM
+command used:cat data.txt
+JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+level 12: username ssh bandit12@bandit.labs.overthewire.org -p 2220
+password:JVNBBFSmZwKKOP0XbFXOoW8chDz5yVRv
+command used:cat data.txt
+man xxd
+mkdir /tmp/ore
+cp data.txt /tmp/ore
+cd /tmp/ore
+ls
+xxd -r data.txt > data
+ls
+file data
+man gzip
+mv data file.gz
+gzip -d file.gz
+ls
+file file
+mv file file.bz2
+man bzip2
+bzip2 -d
+ls
+file file
+mv file file.gz
+gzip -d file.gz
+ls
+file file
+mv file file.tar
+tar xf file.tar
+ls
+file data5.bin
+rm file.tar
+rm data.txt
+ls
+file data5.bin
+mv data.bin data.tar
+tar xf data.tar
+ls
+file data6.bin
+mv data6.bin data.bz2
+bzip2 -d data.bz2
+ls
+file data
+mv data data.tar
+ls
+tar xf data.tar
+ls
+file data8.bin
+mv data8.bin data.gz
+gzip -d data.gz
+ls
+file data to
+cat data: wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+level 13:username ssh bandit13@bandit.labs.overthewire.org -p 2220 
+password:wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
+command used: cat sshkey.private
+cat /etc/bandit_pass/bandit14: fGrHPx402xGC7U7rXKDaxiF0ENq
+nc localhost 30000: jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+level 14:username ssh bandit13@bandit.labs.overthewire.org -p 2220 
+password:fGrHPx402xGC7U7rXKDaxiF0ENq
+level 15:username ssh bandit15@bandit.labs.overthewire.org -p 2220 
+password:jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+command used:man nc | grep ssl
+man nc
+man ncat
+man ncat | grep ssl
+ncat --ssl localhost 30001:jN2kgmIXJ6fShzhT2avhotn4Zcka6tnt
+JQttfApk4SeyHwDlI9SXGR50qclOAil1
+level 16:username ssh bandit16@bandit.labs.overthewire.org -p 2220 
+password:JQttfApk4SeyHwDlI9SXGR50qclOAil1
+command used:cat /etc/bandit_pass/bandit16:JQttfApk4SeyHwDlI9SXGR50qclOAil1
+nmap localhost -p 31000-32000
+cd Desktop
+vim key
+chmod 400 key
+level 17:username ssh bandit17@bandit.labs.overthewire.org -p 2220 
+password: was in a private key
+command used:man diff
+diff passwords.old passwords.new
+hga5tuuCLF6fFzUpnagiMN8ssu9LFrdg
+level 18:username ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh 
+password:ls
+cat readme: awhqfNnAbc1naukrpqDYcF95h7HoMTrc
+level 19:username ssh bandit19@bandit.labs.overthewire.org -p 2220 
+password:  awhqfNnAbc1naukrpqDYcF95h7HoMTrc
+command used:ls
+file bandit20-do
+ls -l bandit20-do
+./bandit20-do id
+./bandit20-do id cat /etc/bandit_pass/bandit20:VxCazJaVykI6W36BU0mJTCMrR95XT
+level 20:username ssh bandit20@bandit.labs.overthewire.org -p 2220 
+password:VxCazJaVykI6W36BU0mJTCMrR95XT
+command used:ls
+man nc
+./suconnect
+./suconnect 9999:NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+level 21:username ssh bandit21@bandit.labs.overthewire.org -p 2220 
+password:NvEJF7oVjkddltPSrdKEFOllh9V1IBcq
+command used:cat /etc/cron.d/
+vim /etc/cron.d/
+cat /etc/cron.d/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t706lds9S0RqQh9aMcz6ShpAoZKF7fgv
+WdDozAdTM2zDiFEQ2mGlwngMfj4EZff
+level 22:username ssh bandit21@bandit.labs.overthewire.org -p 2220 
+password:WdDozAdTM2zDiFEQ2mGlwngMfj4EZff
+command used:cd /etc/cron.d
+ls
+cat cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+8ca319486bfbbc3663ea0fbe81326349
+QYv0Y2aiA672PsMmh9puTQuhoz8SyR2G
+level 23:username ssh bandit21@bandit.labs.overthewire.org -p 2220 
+password:QYv0Y2aiA672PsMmh9puTQuhoz8SyR2G
+command used:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
